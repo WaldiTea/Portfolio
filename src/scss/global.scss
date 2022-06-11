@@ -1,0 +1,62 @@
+@import "variables.scss";
+
+@font-face {
+  font-family: Excalibur;
+  src: url(../assets/fonts/Excalibur_Nouveau.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1340px;
+  height: 100vh;
+  background-color: $navy;
+  color: $font-light;
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5em;
+}
+
+img {
+  width: 100%;
+}
+
+svg {
+  width: 25px;
+  height: 25px;
+  transition: transform 0.3s, color 0.3s;
+
+  &:hover {
+    color: $green;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem 0;
+}

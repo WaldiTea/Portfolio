@@ -1,0 +1,31 @@
+@import "../../scss/variables.scss";
+
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .hero-article {
+    font-size: 1rem;
+
+    .greeting {
+      font-size: 1.5em;
+      margin: 0.5em 0;
+    }
+
+    .name {
+      font-size: 4em;
+    }
+
+    .profession {
+      color: $green;
+      font-size: 2em;
+      margin: 0.5em 0;
+    }
+  }
+
+  .hero-figure {
+    text-align: end;
+  }
+}

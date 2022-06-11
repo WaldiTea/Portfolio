@@ -1,0 +1,19 @@
+@import "../../scss/variables.scss";
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: fixed;
+  top: 50%;
+  left: 2rem;
+  transform: translateY(-50%);
+
+  .link {
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@import "../../scss/variables.scss";
+
+.about-section {
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 auto 15rem auto;
+
+  .about-title {
+    grid-column: 1 / -1;
+
+    &:after {
+      content: "";
+      display: inline-block;
+      position: relative;
+      top: -5px;
+      width: 300px;
+      height: 1px;
+      margin-left: 20px;
+      background-color: $font-light;
+    }
+  }
+
+  .about-figure {
+    overflow: hidden;
+
+    .about-image {
+      text-align: center;
+      transition: filter 0.3s, transform 0.3s;
+      filter: grayscale(100%);
+
+      &:hover {
+        filter: grayscale(0);
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .about-article {
+    .about-text {
+      margin-bottom: 1rem;
+    }
+  }
+}
